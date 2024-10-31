@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Memory Game</h1>
+  <p id="status">Tekan tombol Start untuk memulai permainan!</p>
+
+  <div id="game-info" class="hidden">
+    <p>Waktu: <span id="time">60</span> detik</p>
+    <p>Moves: <span id="moves">0</span></p>
+  </div>
+
+  <div id="game-board" class="hidden"></div>
+  
+  <button id="start-button">Start Game</button>
+  <button id="reset-button" class="hidden">Reset Game</button>
+
+  <!-- Popup Laporan -->
+  <div id="report-popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Laporan Permainan</h2>
+      <p id="report-text"></p>
+      <button id="close-popup">Tutup</button>
+    </div>
+  </div>
+
+  <!-- Konfeti -->
+  <div id="confetti" class="hidden">🎉 Selamat! 🎉</div>
+
+  <!-- Popup Info Klik -->
+  <div id="click-info-popup" class="popup hidden">
+    <div class="popup-content">
+      <p>Silakan klik tombol "Start" untuk memulai permainan!</p>
+      <button id="close-click-popup">Tutup</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
